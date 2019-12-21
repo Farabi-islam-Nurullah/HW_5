@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+      
+        <div class="container">
+            <div class="heading">
+                <h1 >Calculate Your Subject Number</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+            <form action="">
+                <div class="table-responsive-md">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="row">SI</th>
+                              <th scope="col">Subject</th>
+                              <th scope="col">Number</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Bangla</td>
+                              <td>
+                                <input id="imputbox1" class="form-control" type="number" value="">
+                                <span id="message"></span>
+                                
+                              </td>
+                             
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>English</td>
+                              <td>
+                                <input id="imputbox2" class="form-control" type="number" value="">
+                                <span id="message"></span>
+                              </td>
+                             
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Math</td>
+                              <td>
+                                <input id="imputbox3" class="form-control" type="number" value="">
+                                <span id="message"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Science</td>
+                              <td>
+                                <input id="imputbox4" class="form-control" type="number" value="">
+                                <span id="message"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>History</td>
+                              <td>
+                                <input id="imputbox5" class="form-control" type="number" value="">
+                                <span id="message"></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">6</th>
+                              <td>Social Science</td>
+                              <td>
+                                <input id="imputbox6" class="form-control" type="number" value="">
+                                <span id="message"></span>
+                              </td>
+                            </tr>
+                          </tbody>
+                    </table>
+                   
+                 </div>
+                 <!-- #end table -->
+                 <button onclick=" return myfunction()" type="button" class="btn btn-secondary btn-md btn-block">Submit</button>
+            </form>
+                </div>
+                <div class="col-md-6">
+
+
+
+                    <div class="table-responsive-md">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="row">SI</th>
+                                  <th scope="col">Subject</th>
+                                  <th scope="col">Number</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td >Bangla</td>
+                                  <td id="number1"></td>
+                               
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>English</td>
+                                  <td id="number2"></td>
+                                 
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Math</td>
+                                  <td id="number3"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>Science</td>
+                                  <td id="number4"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">5</th>
+                                  <td>History</td>
+                                  <td id="number5"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">6</th>
+                                  <td>Social Science</td>
+                                  <td id="number6"></td>
+                                </tr>
+    
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>TOTAL</td>
+                                  <td id="totaladding"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>TOTAL DIVISION</td>
+                                  <td id="totalDivision"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>CGPA</td>
+                                  <td id="gratingPoint"></td>
+                                </tr>
+    
+                              </tbody>
+                        </table>
+                     </div>
+                     <!-- #end table -->
+                </div>
+            </div>
+            <!-- #end row -->
+        </div>
+        <!-- #end container -->
+    </div> 
+   
+<!-- #end wrapper -->
+<pre>
+
+
+
+
+
+
+</pre>
+
+
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+      <script src="main.js"></script>
+</body>
+</html>
